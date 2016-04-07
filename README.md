@@ -4,3 +4,6 @@
 --
 # 1.效果 #
 :![](diglogcontent.gif)
+
+# 2.总体效果 #
+:![](effect.gif)
