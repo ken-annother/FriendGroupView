@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_group_tv_touxiang"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content" >
+        
+        <TextView 
+            android:id="@+id/item_group_tv_mingzi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00f"
+            android:text="张三"/>
+        
+        <TextView 
+            android:id="@+id/item_group_tv_dianping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="是吃货就应该发些吃货应该发些吃货的东西。"/>
+        
+        <LinearLayout 
+            android:id="@+id/item_group_ll_tupianji"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+	        <ImageView
+	            android:padding="2dp"
+	             android:id="@+id/item_group_iv_pic1"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:src="@drawable/ic_launcher"
+	            android:layout_height="60dp"/>
+	        
+	        <ImageView
+	             android:id="@+id/item_group_iv_pic2"
+	             android:padding="2dp"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:src="@drawable/ic_launcher"
+	            android:layout_height="60dp"/>
+	        
+	        <ImageView
+	             android:id="@+id/item_group_iv_pic3"
+	             android:padding="2dp"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:src="@drawable/ic_launcher"
+	            android:layout_height="60dp"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/item_group_ll_zhuanfa"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp">
+            
+            <ImageView
+                android:id="@+id/item_group_iv_zhuanfatu" 
+                android:src="@drawable/ic_launcher"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            
+            <TextView 
+                android:id="@+id/item_group_tv_zhuanfaneirong" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="大叔系发型，耍的了萌，卖的了酷，重点还很man"/>
+            
+        </LinearLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+	        <TextView 
+	            android:id="@+id/item_group_tv_shijian" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#999"
+	            android:text="2天前"/>
+	        
+	        <ImageButton 
+	            android:id="@+id/item_group_ib_pinglun" 
+	            android:layout_alignParentRight="true"
+	            android:padding="3dp"
+	            android:scaleType="fitXY"
+	            android:src="@drawable/commit"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"/>
+        </RelativeLayout>
+        
+	    <com.chentao.friendgropview.CommitView 
+	        android:id="@+id/item_group_cv_pinglun" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	    </com.chentao.friendgropview.CommitView>
+	    
+    </LinearLayout>
+    
+
+</LinearLayout>

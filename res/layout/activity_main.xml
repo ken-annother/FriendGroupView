@@ -4,12 +4,11 @@
     android:layout_height="match_parent"
     tools:context="com.example.friendgropdemo.MainActivity" >
 
-    
-    <com.chentao.friendgropview.ChatView 
-        android:background="#ccc"
+    <com.chentao.friendgropview.CommitView
         android:id="@+id/cv_1"
         android:layout_width="match_parent"
-    	android:layout_height="match_parent">
-        
-    </com.chentao.friendgropview.ChatView>
+        android:layout_height="match_parent"
+        android:background="#ccc" >
+    </com.chentao.friendgropview.CommitView>
+    
 </RelativeLayout>
